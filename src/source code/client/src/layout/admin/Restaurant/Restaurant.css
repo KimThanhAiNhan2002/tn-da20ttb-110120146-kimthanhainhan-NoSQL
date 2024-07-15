@@ -1,0 +1,201 @@
+/* Shared Styles */
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+ 
+  
+  .content div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Số dòng tối đa */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5em; /* Giới hạn chiều cao tối đa */
+    line-height: 1.5em; /* Chiều cao dòng */
+  }
+  
+  .list h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .list p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các nút */
+  }
+  
+  .list button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px; /* Đảm bảo nút có kích thước tối thiểu */
+  }
+  
+  .list button:hover {
+    background-color: #0056b3;
+  }
+  
+  .list .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .list .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Form styling */
+  .form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form input,
+  .form textarea,
+  .form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-numbers {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .page-numbers a,
+  .page-numbers span {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--bs-primary);
+    background: #f0f0f0;
+  }
+  
+  .page-numbers a:hover,
+  .page-numbers a.current {
+    background: var(--bs-primary);
+    color: #ffffff;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body .description {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .card-image-hover img.image-tour {
+    width: 100%;
+    height: 200px; /* Chiều cao mong muốn của ảnh */
+  }
+  
+  .pagination a,
+  .pagination span {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--bs-primary);
+    background: #f0f0f0;
+  }
+  
+  .pagination a.current,
+  .pagination a:hover {
+    background: var(--bs-primary);
+    color: #ffffff;
+  }
+  
+  

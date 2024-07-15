@@ -1,0 +1,91 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .heroHeader {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    background: rgb(248 69 37);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .resultsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 1280px;
+  }
+  
+  .resultsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .resultItem {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 30%; /* Adjusted to fit three items per row */
+    text-align: center;
+    transition: transform 0.2s;
+    min-height: 350px;
+  }
+  
+  .resultItem:hover {
+    transform: scale(1.05);
+  }
+  
+  .resultImage {
+    width: 100%;
+    height: 200px; /* Adjusted height for consistency */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .resultItem h3 {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  
+  .resultItem p {
+    color: #555;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+  
+  .message {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: rgb(8, 8, 8);
+    font-size: 1.5rem;
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  

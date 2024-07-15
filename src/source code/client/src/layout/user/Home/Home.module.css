@@ -1,0 +1,176 @@
+/* Home.module.css */
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.heroHeader {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.content h1,
+.content h2 {
+  margin: 0.5rem 0;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 1rem auto;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative; /* Ensure the position is relative for absolute positioning of suggestions */
+}
+
+.search-field {
+  background: transparent;
+  width: 300px;
+  max-width: 400px;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  outline: none;
+  position: relative; /* Ensure the position is relative for absolute positioning of suggestions */
+}
+
+.button {
+  background: blue;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.button:hover {
+  background: darkblue;
+}
+
+.message {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(8, 8, 8);
+  font-size: 1.5rem;
+  text-align: center;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.resultsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.resultItem {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.2s;
+  min-height: 350px;
+}
+
+.resultItem:hover {
+  transform: scale(1.05);
+}
+
+.resultImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.resultItem h3 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.resultItem p {
+  color: #555;
+  overflow: hidden;
+  word-wrap: break-word;
+  text-align: center;
+  max-width: 100%;
+  font-size: 0.9rem;
+}
+
+.suggestionsContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: white;
+  z-index: 1000;
+  border-radius: 0 0 0.5rem 0.5rem; /* Ensure the suggestions container has a border radius */
+}
+
+.suggestionItem {
+ text-align: start;
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.suggestionItemHighlighted {
+  background-color: #ddd;
+}
+

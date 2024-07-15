@@ -1,0 +1,229 @@
+.accommodation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.accommodation-list li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accommodation-content {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.accommodation-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.accommodation-content div {
+  display: flex;
+  flex-direction: column;
+}
+
+.accommodation-content p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Số dòng tối đa */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; /* Giới hạn chiều cao tối đa */
+  line-height: 1.5em; /* Chiều cao dòng */
+}
+
+.accommodation-list h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.accommodation-list p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.accommodation-list button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 100px; /* Đảm bảo nút có kích thước tối thiểu */
+}
+
+.accommodation-list button:hover {
+  background-color: #0056b3;
+}
+
+.accommodation-list .delete-button {
+  background-color: #dc3545;
+}
+
+.accommodation-list .delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Form styling */
+.accommodation-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.accommodation-form h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.accommodation-form input,
+.accommodation-form textarea,
+.accommodation-form select {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.accommodation-form button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accommodation-form button:hover {
+  background-color: #0056b3;
+}
+
+.accommodation-form img {
+  display: block;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination span {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 5px;
+  min-width: 34px;
+  height: 34px;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: var(--bs-primary);
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0 5px;
+  min-width: 34px;
+  height: 34px;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+  color: var(--bs-primary);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination a.current {
+  background-color: var(--bs-primary);
+  color: #ffffff;
+}
+
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-image-hover img.image-tour {
+  width: 100%;
+  height: 200px; /* Chiều cao mong muốn của ảnh */
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+
+
+.pagination a, .pagination span {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--bs-primary);
+  background: #f0f0f0;
+}
+
+.pagination a.current, .pagination a:hover {
+  background: var(--bs-primary);
+  color: #ffffff;
+}
+
+.page-numbers {
+  display: flex;
+}
+.card-body .description {
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-body .description figure.image {
+  display: none;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}

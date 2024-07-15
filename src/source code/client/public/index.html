@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="/logo192.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/assets/images/favicon.png">
+  <title>Southwest travel</title>
+  <link href="/assets/plugins/aos/aos.min.css" rel="stylesheet">
+  <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="/assets/plugins/OwlCarousel2/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="/assets/plugins/OwlCarousel2/css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="/assets/plugins/jquery-fancyfileuploader/fancy-file-uploader/fancy_fileupload.css" rel="stylesheet">
+  <link href="/assets/plugins/ion.rangeSlider/ion.rangeSlider.min.css" rel="stylesheet">
+  <link href="/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="/assets/plugins/select2/select2.min.css" rel="stylesheet">
+  <link href="/assets/plugins/select2-bootstrap-5/select2-bootstrap-5-theme.min.css" rel="stylesheet">
+  <!-- Custom style for this template -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/assets_admin/dist/img/favicon.png">
+  <link href="/assets_admin/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets_admin/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+  <link href="/assets_admin/plugins/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="/assets_admin/plugins/toastr/toastr.css" rel="stylesheet">
+  <link href="/assets_admin/plugins/datatables/dataTables.bootstrap5.min.css" rel="stylesheet">
+  <link href="/assets_admin/dist/css/app.min.css" rel="stylesheet">
+  <link href="/assets_admin/dist/css/style.css" rel="stylesheet">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet" />
+ 
+</head>
+<body>
+  <noscript>Southwest travel</noscript>
+  <div id="root"></div>
+  <div id="mapcanvas"></div>
+  <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+
+    To begin the development, run `npm start` or `yarn start`.
+    To create a production bundle, use `npm run build` or `yarn build`.
+  -->
+  <script src="/assets/plugins/jQuery/jquery.min.js"></script>
+  <script src="/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/plugins/aos/aos.min.js"></script>
+  <script src="/assets/plugins/macy/macy.js"></script>
+  <script src="/assets/plugins/simple-parallax/simpleParallax.min.js"></script>
+  <script src="/assets/plugins/OwlCarousel2/owl.carousel.min.js"></script>
+  <script src="/assets/plugins/theia-sticky-sidebar/ResizeSensor.min.js"></script>
+  <script src="/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+  <script src="/assets/plugins/waypoints/jquery.waypoints.min.js"></script>
+  <script src="/assets/plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="/assets/plugins/jquery-fancyfileuploader/fancy-file-uploader/jquery.ui.widget.js"></script>
+  <script src="/assets/plugins/jquery-fancyfileuploader/fancy-file-uploader/jquery.fileupload.js"></script>
+  <script src="/assets/plugins/jquery-fancyfileuploader/fancy-file-uploader/jquery.iframe-transport.js"></script>
+  <script src="/assets/plugins/jquery-fancyfileuploader/fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+  <script src="/assets/plugins/ion.rangeSlider/ion.rangeSlider.min.js"></script>
+  <script src="/assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="/assets/plugins/select2/select2.min.js"></script>
+  <!-- Custom script for this template -->
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets_admin/plugins/jQuery/jquery.min.js"></script>
+    <script src="/assets_admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets_admin/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="/assets_admin/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/assets_admin/plugins/toastr/toastr.min.js"></script>
+    <script src="/assets_admin/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/assets_admin/plugins/datatables/dataTables.bootstrap5.min.js"></script>
+    <script src="/assets_admin/plugins/apexcharts/apexcharts.min.js"></script>
+    <script src="/assets_admin/plugins/jquery.counterup/jquery.waypoints.min.js"></script>
+    <script src="/assets_admin/plugins/jquery.counterup/jquery.counterup.min.js"></script>
+    <script src="/assets_admin/dist/js/app.min.js"></script>
+    <script src="/assets_admin/dist/js/dashboard.js"></script>
+    <script src="/assets_admin/dist/ckeditor/ckeditor.js"></script>
+    <script src="https://kit.fontawesome.com/a557024320.js" crossorigin="anonymous"></script>
+    <!-- Add Facebook SDK -->
+<!--   
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0&appId=2851281615023125&autoLogAppEvents=1"></script>
+      -->
+     <!-- Disqus universal code -->
+  <!-- <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://mytouristspot.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+  </noscript> -->
+
+    
+    <!-- <script
+
+    async
+    defer
+  ></script>
+  <style>
+    #map {
+      height: 100%;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8,
+      });
+    }
+  </script> -->
+    <!-- <script>
+        setTimeout(function () {
+            toastr.options = {
+                closeButton: true,
+                progressBar: true,
+                showMethod: 'slideDown',
+                timeOut: 5000
+            };
+            toastr.success('Directory & Listing HTML Template', 'Welcome to ListOn');
+        }, 500);
+      </script> -->
+</body>
+</html>

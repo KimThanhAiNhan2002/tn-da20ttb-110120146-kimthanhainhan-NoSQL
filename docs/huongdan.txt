@@ -1,0 +1,6 @@
+sau khi tải thư mục dự án cần cài đặt các gói liên quan để có thể chạy dự án:
+- thư mục client: thư mục chứa các mã nguồn cho phần giao diện react.js
+- thư mục server: thư mục chứa các mã nguồn cho phần backend node.js và kết nối database mongoDB
+sau khi đã cài đặt các gói liên quan thì sử dụng lần lượt 2 terminal. 
+1 để cd vào thư mục server sử dụng lệnh npm start để kết nối đến csdl mongoDB để lấy dữ liệu. 
+1 terminal khác cd vào thư mục client sử dụng lệnh npm start để chạy giao diện cho dự án. dự án được khởi động ở http://localhost:3000/

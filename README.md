@@ -1,0 +1,1 @@
+Dự án xây dựng theo đề tài "Xây dựng hệ thống quảng bá du lịch các tỉnh miền Tây Nam Bộ với cơ sở dữ liệu phi quan hệ". Dự án xây dựng giao diện người dùng bằng react.js backend node.js kết nối với csdl mongoDB.
